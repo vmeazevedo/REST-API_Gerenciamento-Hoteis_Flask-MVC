@@ -1,2 +1,3 @@
-# REST-API_Python-Flask_Udemy
-Scritp REST API Python Flask
+# Python-Flask-MVC_REST-API
+Aplicação REST API em Python utilizando framework Flask e padrão MVC.
+
