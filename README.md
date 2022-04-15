@@ -86,8 +86,8 @@ pip install -r requirements.txt
 
 ## Exemplificação via POSTMAN - Hoteis
 ### GET
-**url:** localhost:5000/hoteis
-**Response:**
+**url:** localhost:5000/hoteis </br>
+**Response:** </br>
 ```json
 {
         "hoteis": [
@@ -110,8 +110,8 @@ pip install -r requirements.txt
 ```
 
 ### GET Hotel by Id
-**url:** localhost:5000/hoteis/{hotel_id}
-**Response:**
+**url:** localhost:5000/hoteis/{hotel_id} </br>
+**Response:** </br>
 ```json
 {
     "hotel_id": "charlie",
@@ -145,17 +145,35 @@ pip install -r requirements.txt
 }
 ```
 
-### POST
-![image](https://user-images.githubusercontent.com/40063504/163299897-ac5055e8-3052-4e66-a8aa-5dac8c2017ed.png)
-
-
 ### PUT
-![image](https://user-images.githubusercontent.com/40063504/163299968-d6af5830-6285-4c6d-9798-5f74dd5e5613.png)
-
-![image](https://user-images.githubusercontent.com/40063504/163300027-bd8aac45-6351-4572-865c-f8858f4c60bf.png)
-
+**url:** localhost:5000/hoteis/{hotel_id} </br>
+**Auth:** <Bearer Token> Token = token_de_acesso </br>
+**Body:** </br>
+```json
+{
+    "nome": "Charlie ALTERADO Hotel",
+    "estrelas": 4.9,
+    "diaria": 320.0,
+    "cidade": "São Paulo"
+}
+```
+**Response:**
+```json
+{
+    "hotel_id": "charlie",
+    "nome": "Charlie ALTERADO Hotel",
+    "estrelas": 4.9,
+    "diaria": 320.0,
+    "cidade": "São Paulo"
+}
+```
 
 ### DELETE
-![image](https://user-images.githubusercontent.com/40063504/163300075-b2504a82-b801-4d14-8eca-3a4631bef911.png)
-
-
+**url:** localhost:5000/hoteis/{hotel_id} </br>
+**Auth:** <Bearer Token> Token = token_de_acesso </br>
+**Response:**
+```json
+{
+    "resultado": "Hotel deletado!"
+}
+```
