@@ -24,7 +24,7 @@ class Hotel(Resource):
         return {'resultado': "Hotel não encontrado!"}, 404
         
     # Método POST
-    @jwt_required()
+    @jwt_required()     # Validação de token
     def post(self, hotel_id):
         if HotelModel.find_hotel(hotel_id):
             return {'resultado': "Hotel já existe!"}, 400
@@ -38,7 +38,7 @@ class Hotel(Resource):
         return hotel.json(), 201
         
     # Método PUT
-    @jwt_required()
+    @jwt_required()     # Validação de token
     def put(self, hotel_id):
         dados = Hotel.argumentos.parse_args()  
         hotel_encontrado = HotelModel.find_hotel(hotel_id)
@@ -58,7 +58,7 @@ class Hotel(Resource):
         return hotel.json(), 201
     
     # Método DELETE
-    @jwt_required()
+    @jwt_required()     # Validação de token
     def delete(self, hotel_id):
         hotel = HotelModel.find_hotel(hotel_id)
         if hotel:

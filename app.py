@@ -5,7 +5,6 @@ from controller.usuario import User, UserRegister, UserLogin, UserLogout
 from flask_jwt_extended import JWTManager
 from blacklist import BLACKLIST
 
-
 app = Flask(__name__)
 
 # Configuração SQLAlchemy
