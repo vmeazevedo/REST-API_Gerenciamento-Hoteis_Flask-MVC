@@ -20,6 +20,11 @@ pip install -r requirements.txt
    git clone https://github.com/vmeazevedo/Python-Flask-MVC_REST-API
    ``
 2. Execute o arquivo python ``app.py``.
+3. Abra o POSTMAN e importe a collection ``REST_API.postman_collection.json``.
+4. Execute a Request de Cadastro para criar um id de usuário.
+5. Execute a Request de Login para que o token seja gerado.
+6. Siga a documentação abaixo para executar as requisições e verificar onde se faz necessário o uso de seu token.
+7. Após a utilização execute a Request de Logout para invaldar seu token.
 
 
 ## Exemplificação via POSTMAN - Usuários
