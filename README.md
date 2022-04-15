@@ -25,7 +25,9 @@ pip install -r requirements.txt
 ## Exemplificação via POSTMAN
 
 ### Cadastro
+
 **url:** localhost:5000/cadastro </br>
+
 ```json
 {
     "login": "usuario",
