@@ -33,7 +33,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/hoteis/bravo",
+					"raw": "http://127.0.0.1:5000/hoteis/charlie",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -44,7 +44,7 @@
 					"port": "5000",
 					"path": [
 						"hoteis",
-						"bravo"
+						"charlie"
 					]
 				}
 			},
@@ -53,11 +53,28 @@
 		{
 			"name": "/hoteis/{hotel_id}",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDAzNjE4NiwianRpIjoiMDI4OGY5MWItMTA1Mi00ZGIyLWE5ZGEtOGQwZjQzYjhjYTE1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDM2MTg2LCJleHAiOjE2NTAwMzcwODZ9.HG8hYz8voBASx1zgfvusm1M4mmUgECX1yV2hGF0c1BA",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDAzNjE4NiwianRpIjoiMDI4OGY5MWItMTA1Mi00ZGIyLWE5ZGEtOGQwZjQzYjhjYTE1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDM2MTg2LCJleHAiOjE2NTAwMzcwODZ9.HG8hYz8voBASx1zgfvusm1M4mmUgECX1yV2hGF0c1BA",
+						"type": "text",
+						"disabled": true
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Delta Hotel\",\r\n    \"estrelas\": 4.9,\r\n    \"diaria\": 720.0,\r\n    \"cidade\": \"Rio de Janeiro\"\r\n}",
+					"raw": "{\r\n    \"nome\": \"Charlie Hotel\",\r\n    \"estrelas\": 5.9,\r\n    \"diaria\": 720.0,\r\n    \"cidade\": \"São Paulo\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -65,7 +82,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/hoteis/delta",
+					"raw": "http://127.0.0.1:5000/hoteis/charlie",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -76,7 +93,7 @@
 					"port": "5000",
 					"path": [
 						"hoteis",
-						"delta"
+						"charlie"
 					]
 				}
 			},
@@ -85,11 +102,21 @@
 		{
 			"name": "/hoteis/{hotel_id}",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDAzNjE4NiwianRpIjoiMDI4OGY5MWItMTA1Mi00ZGIyLWE5ZGEtOGQwZjQzYjhjYTE1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDM2MTg2LCJleHAiOjE2NTAwMzcwODZ9.HG8hYz8voBASx1zgfvusm1M4mmUgECX1yV2hGF0c1BA",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Delta ALTERADO Hotel\",\r\n    \"estrelas\": 4.9,\r\n    \"diaria\": 720.0,\r\n    \"cidade\": \"Rio de Janeiro\"\r\n}",
+					"raw": "{\r\n    \"nome\": \"Charlie Hotel\",\r\n    \"estrelas\": 4.9,\r\n    \"diaria\": 720.0,\r\n    \"cidade\": \"Rio de Janeiro\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -97,7 +124,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/hoteis/bravo",
+					"raw": "http://127.0.0.1:5000/hoteis/charlie",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -108,7 +135,7 @@
 					"port": "5000",
 					"path": [
 						"hoteis",
-						"bravo"
+						"charlie"
 					]
 				}
 			},
@@ -117,10 +144,20 @@
 		{
 			"name": "/hoteis/{hotel_id}",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDAzNjE4NiwianRpIjoiMDI4OGY5MWItMTA1Mi00ZGIyLWE5ZGEtOGQwZjQzYjhjYTE1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDM2MTg2LCJleHAiOjE2NTAwMzcwODZ9.HG8hYz8voBASx1zgfvusm1M4mmUgECX1yV2hGF0c1BA",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/hoteis/bravo",
+					"raw": "http://127.0.0.1:5000/hoteis/charlie",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -131,7 +168,149 @@
 					"port": "5000",
 					"path": [
 						"hoteis",
-						"bravo"
+						"charlie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/usuarios/{user_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/usuarios/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"usuarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/usuarios/{user_id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDAzNjE4NiwianRpIjoiMDI4OGY5MWItMTA1Mi00ZGIyLWE5ZGEtOGQwZjQzYjhjYTE1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDM2MTg2LCJleHAiOjE2NTAwMzcwODZ9.HG8hYz8voBASx1zgfvusm1M4mmUgECX1yV2hGF0c1BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/usuarios/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"usuarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"ana\",\r\n    \"senha\": \"asdf\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cadastro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"joão\",\r\n    \"senha\": \"asdf\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/cadastro",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cadastro"
 					]
 				}
 			},
