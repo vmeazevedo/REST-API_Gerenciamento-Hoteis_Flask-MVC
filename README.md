@@ -25,9 +25,7 @@ pip install -r requirements.txt
 ## Exemplificação via POSTMAN
 
 ### Cadastro
-
-**url:** localhost:5000/cadastro </br>
-
+**url:** localhost:5000/cadastro
 ```json
 {
     "login": "usuario",
@@ -57,8 +55,8 @@ pip install -r requirements.txt
 ```
 
 ### Logout
-url: localhost:5000/logout </br>
-Auth: <Bearer Token> Token = token_de_acesso
+**url:** localhost:5000/logout </br>
+**Auth:** <Bearer Token> Token = token_de_acesso </br>
 **Response:**
 ```json
 {
@@ -66,7 +64,24 @@ Auth: <Bearer Token> Token = token_de_acesso
 }
 ```
 
+### Get User by Id
+**url:** localhost:5000/usuario/{user_id}
+**Response:**
+```json
+{
+    "user_id": user_id,
+    "login": "usuario"
+}
+```
 
+### Delete User by iD
+**url:** localhost:5000/usuario/{user_id}
+**Response:**
+```json
+{
+    "resultado": "Usuário deletado!"
+}
+```
 
 ### GET
 ![image](https://user-images.githubusercontent.com/40063504/163299830-4afdb361-662e-405d-9bec-923856578551.png)
