@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ```
 
 ### Login
-**url:** localhost:5000/login
+**url:** localhost:5000/login </br>
 **Body:**
 ```json
 {
