@@ -21,21 +21,36 @@ pip install -r requirements.txt
    ``
 2. Execute o arquivo python ``app.py``.
 
-<br>
+
 ## Exemplificação via POSTMAN
 
 ### Cadastro
-url: localhost:5000/cadastro
+**url:** localhost:5000/cadastro
 ```json
 {
     "login": "usuario",
     "senha": "senha_cadastro" 
 }
 ```
-Response:
+**Response:**
 ```json
 {
     "resultado": "Usuário criado com sucesso!"
+}
+```
+
+### Login
+**url:** localhost:5000/login
+```json
+{
+    "login": "usuario",
+    "senha": "senha_cadastro" 
+}
+```
+**Response:**
+```json
+{
+    "token_de_acesso": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDA0MDY4OCwianRpIjoiODV"
 }
 ```
 
