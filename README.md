@@ -21,7 +21,25 @@ pip install -r requirements.txt
    ``
 2. Execute o arquivo python ``app.py``.
 
-## Exemplificação dos Métodos via POSTMAN
+<br>
+## Exemplificação via POSTMAN
+
+### Cadastro
+url: localhost:5000/cadastro
+```json
+{
+    "login": "usuario",
+    "senha": "senha_cadastro" 
+}
+```
+Response:
+```json
+{
+    "resultado": "Usuário criado com sucesso!"
+}
+```
+
+
 
 ### GET
 ![image](https://user-images.githubusercontent.com/40063504/163299830-4afdb361-662e-405d-9bec-923856578551.png)
