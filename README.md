@@ -1,5 +1,6 @@
 # Python-Flask-MVC_REST-API
-Aplicação REST API em Python utilizando framework Flask e padrão MVC.
+Aplicação REST API em Python utilizando framework Flask e padrão MVC com controle de cadastro de usuário, login e logout.
+API de gerenciamento de informações cadastrais de hoteis.
 
 ![Supported Python Versions](https://img.shields.io/pypi/pyversions/rich/10.11.0) [![Twitter Follow](https://img.shields.io/twitter/follow/vmeazevedo.svg?style=social)](https://twitter.com/vmeazevedo) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Vinícius_Azevedo%20-blue)](https://www.linkedin.com/in/vin%C3%ADcius-azevedo-45180ab2/)
 
