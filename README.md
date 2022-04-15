@@ -41,6 +41,7 @@ pip install -r requirements.txt
 
 ### Login
 **url:** localhost:5000/login
+**Body:**
 ```json
 {
     "login": "usuario",
@@ -84,7 +85,7 @@ pip install -r requirements.txt
 ```
 
 ## Exemplificação via POSTMAN - Hoteis
-### Hoteis
+### GET
 **url:** localhost:5000/hoteis
 **Response:**
 ```json
@@ -108,10 +109,41 @@ pip install -r requirements.txt
 }
 ```
 
+### GET Hotel by Id
+**url:** localhost:5000/hoteis/{hotel_id}
+**Response:**
+```json
+{
+    "hotel_id": "charlie",
+    "nome": "Charlie Hotel",
+    "estrelas": 5.9,
+    "diaria": 720.0,
+    "cidade": "São Paulo"
+}
+```
 
-### GET BY ID
-![image](https://user-images.githubusercontent.com/40063504/163299859-23f3c1fd-1708-446d-ac65-3f1f56e955d6.png)
-
+### POST
+**url:** localhost:5000/hoteis/{hotel_id} </br>
+**Auth:** <Bearer Token> Token = token_de_acesso </br>
+**Body:** </br>
+```json
+{
+    "nome": "Charlie Hotel",
+    "estrelas": 5.9,
+    "diaria": 720.0,
+    "cidade": "São Paulo"
+}
+```
+**Response:**
+```json
+{
+    "hotel_id": "charlie",
+    "nome": "Charlie Hotel",
+    "estrelas": 5.9,
+    "diaria": 720.0,
+    "cidade": "São Paulo"
+}
+```
 
 ### POST
 ![image](https://user-images.githubusercontent.com/40063504/163299897-ac5055e8-3052-4e66-a8aa-5dac8c2017ed.png)
