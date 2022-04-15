@@ -22,7 +22,7 @@ pip install -r requirements.txt
 2. Execute o arquivo python ``app.py``.
 
 
-## Exemplificação via POSTMAN
+## Exemplificação via POSTMAN - Usuários
 
 ### Cadastro
 **url:** localhost:5000/cadastro
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 ```
 
 ### Get User by Id
-**url:** localhost:5000/usuario/{user_id}
+**url:** localhost:5000/usuario/{user_id} </br>
 **Response:**
 ```json
 {
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 ```
 
 ### Delete User by iD
-**url:** localhost:5000/usuario/{user_id}
+**url:** localhost:5000/usuario/{user_id} </br>
 **Response:**
 ```json
 {
@@ -83,8 +83,30 @@ pip install -r requirements.txt
 }
 ```
 
-### GET
-![image](https://user-images.githubusercontent.com/40063504/163299830-4afdb361-662e-405d-9bec-923856578551.png)
+## Exemplificação via POSTMAN - Hoteis
+### Hoteis
+**url:** localhost:5000/hoteis
+**Response:**
+```json
+{
+        "hoteis": [
+        {
+            "hotel_id": "delta",
+            "nome": "Delta Hotel",
+            "estrelas": 5.9,
+            "diaria": 720.0,
+            "cidade": "São Paulo"
+        },
+        {
+            "hotel_id": "charlie",
+            "nome": "Charlie Hotel",
+            "estrelas": 5.9,
+            "diaria": 720.0,
+            "cidade": "São Paulo"
+        }
+    ]
+}
+```
 
 
 ### GET BY ID
