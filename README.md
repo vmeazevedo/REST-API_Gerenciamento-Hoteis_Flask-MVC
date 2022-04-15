@@ -1,4 +1,4 @@
-# Python-Flask-MVC_REST-API
+# REST-API_Gerenciamento-Hoteis_Flask-MVC
 Aplicação REST API em Python utilizando framework Flask e padrão MVC com controle de cadastro de usuário, login e logout.
 API de gerenciamento de informações cadastrais de hoteis.
 
