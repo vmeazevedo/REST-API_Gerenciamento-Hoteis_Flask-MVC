@@ -55,7 +55,7 @@ pip install -r requirements.txt
 ```
 
 ### Logout
-url: localhost:5000/logout
+url: localhost:5000/logout </br>
 Auth: <Bearer Token> Token = token_de_acesso
 **Response:**
 ```json
