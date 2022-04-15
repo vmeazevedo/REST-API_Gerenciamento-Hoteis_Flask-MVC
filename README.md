@@ -54,6 +54,16 @@ pip install -r requirements.txt
 }
 ```
 
+### Logout
+url: localhost:5000/logout
+Auth: <Bearer Token> Token = token_de_acesso
+**Response:**
+```json
+{
+    "resultado": "Usuário deslogado!"
+}
+```
+
 
 
 ### GET
