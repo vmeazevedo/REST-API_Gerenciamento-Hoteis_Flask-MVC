@@ -24,7 +24,7 @@ pip install -r requirements.txt
 4. Execute a Request de Cadastro conforme documentação abaixo para criar um id de usuário.
 5. Execute a Request de Login para que o token seja gerado validando assim suas requests.
 6. Siga a documentação abaixo para executar as requisições e verificar onde se faz necessário o uso de seu token.
-7. Após a utilização execute a Request de Logout para invaldar seu token de sessão.
+7. Após a utilização execute a Request de Logout para invalidar seu token de sessão.
 
 
 ## Exemplificação via POSTMAN - Usuários
